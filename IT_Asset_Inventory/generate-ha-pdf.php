@@ -172,8 +172,6 @@ $count = 1;
 $header = array('Item Name', 'Item Type', 'User', 'Location', 'Status', 'Description');
 
 
-
-
 // Colored table 
 
 // Colors, line width and bold font
@@ -211,36 +209,6 @@ foreach($assets as $asset) {
 $pdf->Cell(array_sum($w), 0, '', 'T');
 
 
-//Cell($w, $h=0, $txt='', $border=0, $ln=0, $align='', $fill=0, $link='', $stretch=0, $ignore_min_height=false, $calign='T', $valign='M')
-// foreach($assets as $asset){
-//     $text = "";
-//     if($count % 2 == 0){ 
-//         $pdf->SetFillColor(236, 240, 241);  
-//     }
-//     else{
-//         // set color for background
-//         $pdf->SetFillColor(253, 254, 254);
-//     }
-        
-//     $text = "". setWidth(180, '', '') ."". setWidth(45, 'Serial No.: ', $asset['serial_no']) ."". setWidth(40, 'Item Name: ', $asset['item_name']) ."" . setWidth(35, 'Item Type: ', $asset['item_type']) . "    
-//     ". setWidth(180, '', '') ."" . setWidth(54, 'Brand: ', $asset['item_brand']) ."" .setWidth(45, 'Vendor: ', $asset['manufacturer']). "".setWidth(35, 'Status: ', $asset['curr_status']) . "
-//     ". setWidth(180, '', '') ."" . setWidth(45, 'User: ', $asset['user']) ."".setWidth(35, 'Location: ', $asset['curr_location'])."
-//     ". setWidth(180, '', '') ."" .setWidth(55, 'Description: ', $asset['hardware_description']). "". setWidth(180, '', '') ."" ;
-        
-//     $pdf->MultiCell(0, 0, $text."\n", 1, 'J', 1, 1, '', '', true, 0, false, true, 0);    
-       
-//     $pdf->Ln(1);
-//     $count = $count + 1;
-// }
-
-// function setWidth($desiredLength, $property, $value){
-//     $text = $property . $value;
-//     $textLength = strlen($text);
-//     for($i = $textLength; $i <= $desiredLength; $i++){
-//         $text .= " ";
-//     }
-//     return $text;
-// }
 
 // ---------------------------------------------------------
 

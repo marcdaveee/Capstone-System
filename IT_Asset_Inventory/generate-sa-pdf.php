@@ -166,38 +166,6 @@ foreach($assets as $asset) {
 }
 $pdf->Cell(array_sum($w), 0, '', 'T');
 
-
-//Cell($w, $h=0, $txt='', $border=0, $ln=0, $align='', $fill=0, $link='', $stretch=0, $ignore_min_height=false, $calign='T', $valign='M')
-// foreach($assets as $asset){
-//     $text = "";
-//     if($count % 2 == 0){ 
-//         $pdf->SetFillColor(236, 240, 241);  
-//     }
-//     else{
-//         // set color for background
-//         $pdf->SetFillColor(253, 254, 254);
-//     }
-        
-//     $text = "". setWidth(180, '', '') ."". setWidth(45, 'Product ID.: ', $asset['product_id']) ."". setWidth(45, 'Software Name: ', $asset['software']) ."" .setWidth(35, 'Vendor: ', $asset['manufacturer']). "    
-//     ". setWidth(180, '', '') ."" . setWidth(41, 'Software Type: ', $asset['software_type']) .  "".setWidth(40, 'Date of Purchase: ', $asset['date_of_purchase']) . "" . setWidth(40, 'No. of Installation: ', $asset['no_of_installation']) ."
-//     ". setWidth(180, '', '') ."" .setWidth(46, 'Validity: ', $asset['validity'])."" .setWidth(35, 'Status: ', $asset['curr_status'])."
-//     ". setWidth(180, '', '') ."" .setWidth(55, 'Description: ', $asset['soft_description']). "". setWidth(180, '', '') ."" ;
-        
-//     $pdf->MultiCell(0, 0, $text."\n", 1, 'J', 1, 1, '', '', true, 0, false, true, 0);    
-       
-//     $pdf->Ln(1);
-//     $count = $count + 1;
-// }
-
-// function setWidth($desiredLength, $property, $value){
-//     $text = $property . $value;
-//     $textLength = strlen($text);
-//     for($i = $textLength; $i <= $desiredLength; $i++){
-//         $text .= " ";
-//     }
-//     return $text;
-// }
-
 // ---------------------------------------------------------
 
 //Close and output PDF document
