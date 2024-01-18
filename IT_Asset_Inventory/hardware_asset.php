@@ -32,7 +32,8 @@
         $manufacturer = $hardwareAsset["manufacturer"];
         $description = $hardwareAsset["hardware_description"];
         $user = $hardwareAsset["user"];
-        $location = $hardwareAsset["curr_location"];                
+        $location = $hardwareAsset["curr_location"];
+        $dateAllocated = $hardwareAsset["date_allocated"];           
       }
       else{
         die("No records Available");
@@ -143,7 +144,16 @@
                 <div class="flex flex-just-sb form-card">
                   <h3 class="txt-sm txt-fw-2 ml-1"><?php echo $hardwareAsset["hardware_description"] ?></h3>                
                 </div>
-              </div>                              
+              </div>
+              
+              <?php if($hardwareAsset["curr_status"] == "Active"): ?>
+                <div>
+                  <h3 class="txt-sm txt-fw-3">Date Allocated:</h3>
+                  <div class="flex flex-just-sb form-card">
+                    <h3 class="txt-sm txt-fw-2 ml-1"><?php echo $hardwareAsset["date_allocated"] ?></h3>                
+                  </div>
+                </div>              
+              <?php endif; ?>
 
             </div>
               

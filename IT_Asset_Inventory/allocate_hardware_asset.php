@@ -46,6 +46,7 @@
           $user = "";
           $location = $hardwareAsset["curr_location"];
           $status = $hardwareAsset["curr_status"];
+          $dateAllocated = $hardwareAsset["date_allocated"];
         }
         else{
           die("This asset is already allocated!");  
@@ -88,11 +89,13 @@
       if($error["userFieldError"] == "" && $error["locationFieldError"] == ""){ 
         $currentId = $_POST["current_id"];
         $status = "Active";
+        $dateAllocated = date("Y-m-d");
                
         $sql = "UPDATE hardware_asset
         SET user='$user', 
             curr_location='$location',
-            curr_status='$status'
+            curr_status='$status',
+            date_allocated='$dateAllocated'
         WHERE id=$currentId"; 
   
         if(mysqli_query($conn, $sql)){
@@ -173,11 +176,13 @@
 
               <div class="form-group">
                   <p class="txt-sm txt-weight-medium">Status: <span class="txt-sm txt-weight-light"><?php echo $status; ?></span></p> 
-              </div>
+              </div>              
 
               <div class="form-group">
                   <p class="txt-sm txt-weight-medium">Description: <span class="txt-sm txt-weight-light"><?php echo $description; ?></span></p> 
               </div>
+
+             
 
             </div>
           </div>
