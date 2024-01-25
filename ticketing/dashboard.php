@@ -180,7 +180,7 @@
               <div class="col col-3">User</div>              
               
               <div class="col col-4">Type</div>
-              <div class="col col-4">Issued</div>
+              <div class="col col-4">Created</div>
               <div class="col col-3">Priority</div>              
               <div class="col col-6">Subject</div>
               
