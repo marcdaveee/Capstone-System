@@ -180,7 +180,7 @@
                               </div> -->
                         </div> 
                                                   
-                        <h3 class="txt-fw-2 txt-light txt-sm">Date Issued: <span class="txt-fw-3 txt-dark"> <?php echo getDateFormat($dateIssued) . getTimeFormat($dateIssued)?> </span></h3>
+                        <h3 class="txt-fw-2 txt-light txt-sm">Date Created: <span class="txt-fw-3 txt-dark"> <?php echo getDateFormat($dateIssued) . getTimeFormat($dateIssued)?> </span></h3>
 
                         <div class="mt-3"></div>
                         

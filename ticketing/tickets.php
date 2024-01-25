@@ -119,7 +119,7 @@
                 <div class="col col-3">Ticket Id</div>
                 <div class="col col-5">User</div>                              
                 <div class="col col-3">Type</div>
-                <div class="col col-4">Issued</div>
+                <div class="col col-4">Created</div>
                 <div class="col col-3">Priority</div>              
                 <div class="col col-6">Subject</div>
                 <div class="col col-4">Assigned To</div>
