@@ -51,7 +51,7 @@
     <section class="main-dashboard bg-light-primary">
 
         <div class="container">
-          <div id="top-header" class="flex flex-just-sb ">
+          <div id="top-header" class="flex flex-just-sb ">              
                   <h2 class="txt-md"><i class="fa-regular fa-folder-open mr-1"></i>Hardware Asset</h2> 
                   <h1 class="txt-md my-3">Hello, <?php echo $username?></h1>        
             </div>
